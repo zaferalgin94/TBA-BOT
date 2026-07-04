@@ -1,5 +1,22 @@
 # TBA-BOT Sürüm Notları
 
+## v1.4 — 5 Temmuz 2026
+
+### Keşfet güvenlik paketi (yanlış butona tıklama tamamen engellendi)
+- Keşif ekranında iki Keşfet butonu göründüğünde (soldaki düşük, sağdaki yüksek katran maliyetli) bot bazen yanlış olana tıklayıp zarara yol açabiliyordu. Dört katmanlı koruma eklendi:
+  1. Gevşetilmiş eşikle TÜM Keşfet butonları bulunur ve log'a yazılır
+  2. Carter panelinin solunda kalan adaylar elenir (konum çapası)
+  3. OCR veto: Tesseract kuruluysa katran maliyetleri okunur; seçilen buton en yüksek maliyetli değilse TIKLANMAZ (OCR yalnız durdurabilir, yönlendiremez)
+  4. Tıklamadan hemen önce buton hâlâ yerinde mi diye son kontrol
+- Hiçbir koşulda emin olunamazsa bot GÜVENLİ İPTAL yapar: tıklamaz, ESC basar, turu pas geçer.
+
+### Git butonu seçimi (oyuncu çakışması önleme)
+- Watchtower listesindeki 1. "Git" butonu artık asla kullanılmıyor (herkes ona gittiği için çakışma oluyordu). Ağırlıklı seçim: ~%60 ikinci buton, kalanı alt sıralar. Tek buton varsa mecburen o. (Crypt + Citadel)
+
+### Web sürümü desteği
+- Tarayıcıda oynayanlarda bot artık pencereyi büyütüp zoom'u %100'e sıfırlıyor (Ctrl+0).
+- Otomatik UI ölçek kalibrasyonu: bot açılışta bilinen bir öğeyi 15 farklı ölçekte arayıp oyunun çizim ölçeğini saptıyor; tüm şablonlar ve tık ofsetleri o ölçeğe uyarlanıyor (DPI/zoom farkları için). Log: "UI olcegi kalibre edildi: x1.25".
+
 ## v1.3 — 2 Temmuz 2026
 
 ### Düzeltme
