@@ -1,5 +1,18 @@
 # TBA-BOT Sürüm Notları
 
+## v1.5 — 5 Temmuz 2026
+
+### Kritik düzeltmeler (v1.4'teki "mahzen seçemiyor" hatası giderildi)
+- **Ölçek kalibrasyonu güvenli hale getirildi:** v1.4'te otomatik kalibrasyon masaüstünde yanlış tetiklenip tüm şablonları bozabiliyordu. Artık standart ölçek (x1.00) iyi çalışıyorsa ölçeğe asla dokunulmuyor; yalnızca standart net başarısız + alternatif net başarılıysa (gerçek web/zoom durumu) devreye giriyor.
+- **Bot artık oyunu gereksiz kapatmıyor:** Hard restart (oyunu kapatıp açma) yalnızca oyun penceresi gerçekten kaybolduğunda yapılıyor. Şablon bulamama krizinde bot oyunu kapatmıyor; ölçeği sıfırlayıp denemeye devam ediyor.
+
+### Performans
+- **Mahzen arama hızlandırıldı:** Işınlanan mahzen ekranın orta bölgesinde belirdiği için bot önce sadece o dar alanı tarıyor (çok daha hızlı); bulamazsa tam ekrana düşüyor. Arama süresi belirgin şekilde kısaldı.
+
+### İyileştirmeler
+- **Git butonu rotasyonu:** Başarısız denemede bir sonraki Git butonuna geçilir; başarılı butonda kalınır (1. buton çoğu zaman boş bölgeye götürüp zaman kaybettiriyordu). Çakışmada bot kendiliğinden diğer mahzenlere kayar. (Crypt + Citadel)
+- **Geç yüklenen Keşfet butonu:** Sağdaki (doğru) Keşfet geç belirdiğinde bot kısa süre bekleyip yeniden tarıyor; erken/yanlış tıklama önlendi.
+
 ## v1.4 — 5 Temmuz 2026
 
 ### Keşfet güvenlik paketi (yanlış butona tıklama tamamen engellendi)
