@@ -1,5 +1,14 @@
 # TBA-BOT Sürüm Notları
 
+## v1.6 — 12 Temmuz 2026
+
+### Firebase lisans / giriş sistemi
+- **Üye girişi eklendi:** Bot açılışta e-posta + şifre ile giriş ister. Şifreler Google/Firebase tarafında güvenli tutulur; kimse (yönetici dahil) göremez.
+- **Yönetici onayı:** Yeni kaydolan üye, yönetici onaylayana kadar giremez.
+- **Uzaktan yetki kapatma:** Klandan çıkan/uygunsuz üye anında devre dışı bırakılabilir; girişi hemen geçersiz olur.
+- **Zorunlu güncelleme:** Sunucudaki minimum sürüm ayarı botun sürümünden yüksekse kullanıcı "güncelleme gerekli" uyarısı alır ve giremez.
+- **Ek kurulum GEREKTİRMEZ:** Firebase için bilgisayara hiçbir program/paket kurulmaz. Bot yalnızca internet üzerinden Firebase'e bağlanır (bulut servisi). Sadece standart Python kütüphaneleri (urllib, tkinter) kullanılır.
+
 ## v1.5 — 5 Temmuz 2026
 
 ### Kritik düzeltmeler (v1.4'teki "mahzen seçemiyor" hatası giderildi)
