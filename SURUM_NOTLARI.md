@@ -1,5 +1,13 @@
 # TBA-BOT Sürüm Notları
 
+## v1.7 — 12 Temmuz 2026
+
+### Çok dil ve kayıt
+- **Giriş ekranı 4 dilli:** Türkçe, İngilizce, Fransızca, Rusça. Sağ üstteki seçiciden dil değiştirilir; seçim hatırlanır ve launcher da aynı dili kullanır.
+- **Launcher'a Rusça eklendi:** İç ekrandaki tüm durum/buton metinleri artık Rusça dahil 4 dilde.
+- **Oyun ismi (nickname) alanı:** Kayıt ekranında artık Oyun İsmi + E-posta + Şifre isteniyor. Nickname Firebase'de saklanır ve yönetim panelinde görünür (üyeleri oyun ismiyle tanırsın).
+- **Kurulum talimatları:** Giriş ekranındaki "ⓘ Başlamadan önce" butonu, seçili dilde şunları hatırlatır: oyunu İngilizce yap, zoom %125, Carter hazır, gözetleme kulesi hazır.
+
 ## v1.6 — 12 Temmuz 2026
 
 ### Firebase lisans / giriş sistemi
