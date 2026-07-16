@@ -1,5 +1,12 @@
 # TBA-BOT Sürüm Notları
 
+## v1.8 — 16 Temmuz 2026
+
+### Giriş güvenliği ve kolaylık
+- **Üçlü doğrulama ile giriş:** Artık giriş için Oyun İsmi + E-posta + Şifre birlikte gerekiyor. E-posta ve şifre doğru olsa bile oyun ismi hesapla eşleşmezse giriş reddedilir. Oyun ismi kayıt sırasında bir kez belirlenir; kullanıcı sonradan değiştiremez (yalnızca yönetici panelden değiştirebilir).
+- **Beni hatırla:** Giriş ekranındaki kutu işaretlenirse oyun ismi + e-posta + şifre bu bilgisayarda saklanır ve bir dahaki açılışta otomatik dolar. İşaret kaldırılınca saklanan şifre diskten silinir. (Ortak bilgisayarda işaretlememek önerilir.)
+- **Talimatlar her yerde:** "ⓘ Başlamadan önce" bilgilendirmesi artık hem giriş ekranında hem de asıl launcher panelinde bir buton altında; seçili dilde açılır.
+
 ## v1.7 — 12 Temmuz 2026
 
 ### Çok dil ve kayıt
